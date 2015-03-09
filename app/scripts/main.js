@@ -10,9 +10,9 @@ console.log('if you can read this, you are probably a web developer');
 $(document).ready(function(){
 
   var $bigButton = $('#btnMain');
+  $search.focus();
   $bigButton.on('click', function(){
-  // var $formSubmit = $('form#form-inline');
-  // $formSubmit.on('click', function(){
+    $tweetList.empty();
     App.MyTweets(event);
     console.log('you just clicked the button, cheers!');
     console.log($search.val());
